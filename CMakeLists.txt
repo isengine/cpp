@@ -29,6 +29,8 @@ project(${LOCAL_PROJECT_NAME}
 
 add_executable(${LOCAL_PROJECT_NAME} ${SOURCES} ${HEADERS})
 
+# target_link_libraries(${LOCAL_PROJECT_NAME} pdcurses)
+
 target_include_directories(${LOCAL_PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/includes)
 target_compile_definitions(${LOCAL_PROJECT_NAME} PRIVATE ${DEFINES})
 target_compile_options(${LOCAL_PROJECT_NAME} PRIVATE ${OPTIONS})
